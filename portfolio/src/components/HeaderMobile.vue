@@ -4,7 +4,7 @@
     scroll-behavior="hide"
     class="mb-8 pb-6"
     height="100"
-    scroll-threshold="50"
+    scroll-threshold="10"
   >
     <div class="pa-8 pt-10">
       <div>
