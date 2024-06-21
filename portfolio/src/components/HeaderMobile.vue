@@ -8,10 +8,10 @@
   >
     <div class="pa-8 pt-10">
       <div>
-        <h1>Lucia Bordona Alonso</h1>
+        <h1>LUCIA BORDONA ALONSO</h1>
       </div>
       <div>
-        <h3>Set Design | Visual Development | Costume Design</h3>
+        <h3>Set Design | Model Making | Costume Design</h3>
       </div>
     </div>
     <v-spacer />
@@ -37,7 +37,7 @@
 export default {
   data: () => ({
     items: [
-      { title: "Portfolio", value: "home" },
+      { title: "Set Design", value: "home" },
       { title: "Modelmaking", value: "model" },
       { title: "Costumedesign", value: "set" },
       { title: "About Me", value: "about" },

@@ -10,14 +10,14 @@
           <h1 class="">LUCIA BORDONA ALONSO</h1>
         </div>
         <div>
-          <h3 class="">Set Design | Visual Development | Costume Design</h3>
+          <h3 class="">Set Design | Model Making | Costume Design</h3>
         </div>
       </v-col>
       <v-col class="d-flex justify-end">
         <v-tabs v-model="tab" @update:model-value="handleTabChange">
-          <v-tab value="home">Portfolio</v-tab>
+          <v-tab value="home">Set Design</v-tab>
           <v-tab value="model">Modelmaking</v-tab>
-          <v-tab value="set">Costumedesign</v-tab>
+          <v-tab value="set">Costume Design</v-tab>
           <v-tab value="about">About me</v-tab>
         </v-tabs>
       </v-col>

@@ -20,6 +20,8 @@ import imgUrl6 from "/src/assets/PORTFOLIO/06_compress.png";
 import imgUrl7 from "/src/assets/PORTFOLIO/07_compress.png";
 import imgUrl8 from "/src/assets/PORTFOLIO/08_compress.png";
 import imgUrl9 from "/src/assets/PORTFOLIO/09_compress.png";
+import imgUrl10 from "/src/assets/PORTFOLIO/10_compress.png";
+import imgUrl11 from "/src/assets/PORTFOLIO/11_compress.png";
 
 export default {
   data() {
@@ -34,6 +36,8 @@ export default {
         { img: imgUrl7 },
         { img: imgUrl8 },
         { img: imgUrl9 },
+        { img: imgUrl10 },
+        { img: imgUrl11 },
       ],
     };
   },
