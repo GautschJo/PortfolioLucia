@@ -21,8 +21,8 @@
           <br />
           <div class="e1 justify-center">
             <div class="text">
-              I am a 24-year old Visual Development artist and Set Designer
-              based in Rome, Italy.
+              I am a 24-year old Set and Costume Design artist based in Rome,
+              Italy.
             </div>
             <br />
             <div class="text">

@@ -1,7 +1,19 @@
 <template>
   <div style="margin-top: 30px">
     <v-row
-      v-for="(image, index) in images"
+      v-for="(image, index) in imagesHowl"
+      :key="index"
+      style="margin-bottom: 30px"
+    >
+      <v-img :src="image.img" />
+    </v-row>
+    <v-divider
+      color="#cf8946"
+      style="margin-bottom: 40px; opacity: 1 !important"
+      thickness="5"
+    />
+    <v-row
+      v-for="(image, index) in imagesTV"
       :key="index"
       style="margin-bottom: 30px"
     >
@@ -26,7 +38,7 @@ import imgUrl11 from "/src/assets/PORTFOLIO/11_compress.png";
 export default {
   data() {
     return {
-      images: [
+      imagesHowl: [
         { img: imgUrl1 },
         { img: imgUrl2 },
         { img: imgUrl3 },
@@ -36,9 +48,8 @@ export default {
         { img: imgUrl7 },
         { img: imgUrl8 },
         { img: imgUrl9 },
-        { img: imgUrl10 },
-        { img: imgUrl11 },
       ],
+      imagesTV: [{ img: imgUrl10 }, { img: imgUrl11 }],
     };
   },
 };
