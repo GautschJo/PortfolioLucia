@@ -21,7 +21,7 @@
           <br />
           <div class="e1 justify-center">
             <div class="text">
-              I am a 24-year old Set and Costume Design artist based in Rome,
+              I am a 25-year old Set and Costume Design artist based in Rome,
               Italy.
             </div>
             <br />
@@ -61,6 +61,24 @@
           >
             Resume
           </v-btn>
+          <a href="https://www.instagram.com/polytorpe/" target="_blank">
+            <v-icon class="mt-2 ml-5" size="40" color="#784910">
+              mdi-instagram
+            </v-icon>
+          </a>
+          <a href="https://luciabordona.artstation.com/" target="_blank">
+            <v-icon class="mt-2 ml-5" size="40" color="#784910">
+              mdi-artstation
+            </v-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucia-bordona-alonso/"
+            target="_blank"
+          >
+            <v-icon class="mt-2 ml-5" size="40" color="#784910">
+              mdi-linkedin
+            </v-icon>
+          </a>
         </div>
       </v-col>
       <v-col class="" cols="" v-if="$vuetify.display.mdAndUp">

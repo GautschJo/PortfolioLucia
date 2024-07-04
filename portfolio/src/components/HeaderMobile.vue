@@ -40,6 +40,7 @@ export default {
       { title: "Set Design", value: "home" },
       { title: "Modelmaking", value: "model" },
       { title: "Costumedesign", value: "set" },
+      { title: "Sketches", value: "sketches" },
       { title: "About Me", value: "about" },
     ],
   }),

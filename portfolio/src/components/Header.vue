@@ -18,6 +18,7 @@
           <v-tab value="home">Set Design</v-tab>
           <v-tab value="model">Modelmaking</v-tab>
           <v-tab value="set">Costume Design</v-tab>
+          <v-tab value="sketches">Sketches</v-tab>
           <v-tab value="about">About me</v-tab>
         </v-tabs>
       </v-col>

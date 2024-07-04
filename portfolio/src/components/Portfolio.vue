@@ -9,8 +9,8 @@
     </v-row>
     <v-divider
       color="#cf8946"
-      style="margin-bottom: 40px; opacity: 1 !important"
-      thickness="5"
+      style="margin-bottom: 40px; opacity: 0.6 !important"
+      thickness="2"
     />
     <v-row
       v-for="(image, index) in imagesTV"

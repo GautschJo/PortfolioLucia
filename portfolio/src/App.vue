@@ -20,6 +20,7 @@ import AboutMe from "@/components/AboutMe.vue";
 import Model from "@/components/Model.vue";
 import Set from "@/components/Costume.vue";
 import HeaderMobile from "@/components/HeaderMobile.vue";
+import Sketches from "@/components/Sketches.vue";
 export default {
   components: { HeaderMobile, Header, Portfolio, AboutMe },
   data() {
@@ -41,6 +42,8 @@ export default {
           return Model;
         case "set":
           return Set;
+        case "sketches":
+          return Sketches;
         case "about":
           return AboutMe;
         default:
