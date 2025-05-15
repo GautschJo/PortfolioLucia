@@ -1,8 +1,8 @@
 <template>
   <v-app-bar
     height="200"
+    absolute
     style="background-color: rgba(255, 255, 255, 0.4)"
-    scroll-behavior="hide"
   >
     <v-row style="display: flex" class="justify-end">
       <v-col class="align-content-center" style="padding-left: 100px">
