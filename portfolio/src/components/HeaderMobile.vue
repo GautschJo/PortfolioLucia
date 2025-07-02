@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     style="background-color: rgba(255, 255, 255, 0.4)"
-    scroll-behavior="hide"
+    absolute
     class="mb-8 pb-6"
     height="100"
     scroll-threshold="10"
