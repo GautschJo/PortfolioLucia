@@ -11,7 +11,10 @@
         <h1>LUCIA BORDONA ALONSO</h1>
       </div>
       <div>
-        <h3>Set Design | Model Making | Costume Design</h3>
+        <h3>
+          <span v-if="isModelMaking">Model Making</span
+          ><span v-if="isCostumeDesign">Costume Design</span> | Set Design
+        </h3>
       </div>
     </div>
     <v-spacer />
@@ -21,12 +24,17 @@
       </template>
 
       <v-list style="background-color: #fee6c4">
-        <v-list-item v-for="(item, i) in items" :key="i">
+        <v-list-item v-for="(item, i) in filteredItems" :key="i">
           <v-list-item-title
-            style="font-family: Quicksand-Light, sans-serif; color: #784910"
+            style="
+              font-family: Quicksand-Light, sans-serif;
+              color: #784910;
+              cursor: pointer;
+            "
             @click="handleClick(item.value)"
-            >{{ item.title }}</v-list-item-title
           >
+            {{ item.title }}
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -37,9 +45,9 @@
 export default {
   data: () => ({
     items: [
-      { title: "Set Design", value: "home" },
-      { title: "Modelmaking", value: "model" },
-      { title: "Costumedesign", value: "set" },
+      { title: "Model Making", value: "model", require: "modelMaking" },
+      { title: "Costume Design", value: "costume", require: "costumeDesign" },
+      { title: "Set Design", value: "set" },
       { title: "Sketches", value: "sketches" },
       { title: "About Me", value: "about" },
     ],
@@ -47,6 +55,25 @@ export default {
   methods: {
     handleClick(value) {
       this.$emit("tabChanged", value);
+    },
+  },
+  computed: {
+    filteredItems() {
+      return this.items.filter((item) => {
+        // Wenn kein "require" gesetzt ist, immer anzeigen
+        if (!item.require) return true;
+
+        // Prüfen, ob der Pfad den geforderten String enthält
+        return this.$route.path
+          .toLowerCase()
+          .includes(item.require.toLowerCase());
+      });
+    },
+    isModelMaking() {
+      return this.$route.path.includes("modelMaking");
+    },
+    isCostumeDesign() {
+      return this.$route.path.includes("costumeDesign");
     },
   },
 };

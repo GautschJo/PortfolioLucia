@@ -99,7 +99,11 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "AboutMe",
+};
+</script>
 
 <style scoped>
 h1 {

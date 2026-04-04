@@ -10,14 +10,17 @@
           <h1 class="">LUCIA BORDONA ALONSO</h1>
         </div>
         <div>
-          <h3 class="">Set Design | Model Making | Costume Design</h3>
+          <h3 class="">
+            <span v-if="isModelMaking">Model Making</span
+            ><span v-if="isCostumeDesign">Costume Design</span> | Set Design
+          </h3>
         </div>
       </v-col>
       <v-col class="d-flex justify-end">
         <v-tabs v-model="tab" @update:model-value="handleTabChange">
-          <v-tab value="home">Set Design</v-tab>
-          <v-tab value="model">Modelmaking</v-tab>
-          <v-tab value="set">Costume Design</v-tab>
+          <v-tab v-if="isModelMaking" value="model"> Modelmaking </v-tab>
+          <v-tab v-if="isCostumeDesign" value="costume"> Costume Design </v-tab>
+          <v-tab value="set">Set Design</v-tab>
           <v-tab value="sketches">Sketches</v-tab>
           <v-tab value="about">About me</v-tab>
         </v-tabs>
@@ -36,6 +39,14 @@ export default {
   methods: {
     handleTabChange(newValue) {
       this.$emit("tabChanged", newValue);
+    },
+  },
+  computed: {
+    isModelMaking() {
+      return this.$route.path.includes("modelMaking");
+    },
+    isCostumeDesign() {
+      return this.$route.path.includes("costumeDesign");
     },
   },
 };
