@@ -3,7 +3,7 @@
     style="background-color: rgba(255, 255, 255, 0.4)"
     absolute
     class="mb-8 pb-6"
-    height="100"
+    height="140"
     scroll-threshold="10"
   >
     <div class="pa-8 pt-10">

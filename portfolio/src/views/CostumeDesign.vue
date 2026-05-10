@@ -26,7 +26,7 @@ export default {
   components: { HeaderMobile, Header, Portfolio, AboutMe },
   data() {
     return {
-      tab: "home",
+      tab: "costume",
     };
   },
   methods: {
@@ -58,7 +58,9 @@ export default {
 <style scoped>
 .bg {
   background-image: url("@/assets/BG.jpeg");
-  background-size: 85%;
+  background-size: cover; /* 'cover' füllt die gesamte Fläche aus */
+  background-position: center;
   background-attachment: fixed;
+  min-height: 100vh; /* Stellt sicher, dass der Hintergrund mindestens den Bildschirm füllt */
 }
 </style>

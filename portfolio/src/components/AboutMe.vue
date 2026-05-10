@@ -2,11 +2,15 @@
   <div
     :style="
       $vuetify.display.width > 1600
-        ? 'width: 1600px; margin-left: -120px; height: 700px'
-        : 'margin-top: 30px; height: 1100px'
+        ? 'width: 1600px; margin-left: -120px; min-height: 700px'
+        : 'margin-top: 30px; min-height: 600px'
     "
   >
-    <v-row style="background-color: white; height: 700px" no-gutters class="">
+    <v-row
+      style="background-color: white; min-height: 900px"
+      no-gutters
+      class="pb-0"
+    >
       <v-col class="d-flex justify-center" lg="7" md="5">
         <div
           class="textDiv"
@@ -21,20 +25,33 @@
           <br />
           <div class="e1 justify-center">
             <div class="text">
-              I am a 25-year old Set and Costume Design artist based in Rome,
-              Italy.
+              I´m a 27-year old model maker and environment designer currently
+              based in Barcelona, Spain.
             </div>
             <br />
             <div class="text">
-              I´m a dedicated artist, adaptable, resilient and full of passion
-              and enthusiasm for my work.
+              I have worked in a series of theatre and short film productions
+              and am currently part of the workshop responsible for creating,
+              among other projects, the scale models for the Sagrada Familia
+              museum.
+            </div>
+            <br />
+            <div class="text">
+              I am knowledgeable in painting (traditional as well as digital),
+              3D programs and productions (from 3D modelling and texturing, to
+              3D printing workflow and knowledge of the 3D production pipeline
+              for film and games).
             </div>
             <br />
             <div class="text">
               The combination of a degree in animation and VFX and a master in
               Set Design for film, theater and television has made me very
               versatile and a fast learner, managing both 3D software and
-              real-life construction materials.
+              real-life construction materials. I have experience jumping from
+              3D mediums to traditional workflows for model making and do so
+              very comfortably, always willing to learn new techniques and
+              explore faster and more efficient ways of production within
+              projects.
             </div>
             <br />
             <div class="text">
@@ -42,7 +59,6 @@
               the group and working hard towards creating a supportive and open
               working environment.
             </div>
-            <br />
             <span class="text">
               <a
                 href="mailto:lbordona-alonso@gmail.com"
@@ -83,7 +99,7 @@
       </v-col>
       <v-col class="" cols="" v-if="$vuetify.display.mdAndUp">
         <v-img
-          src="../assets/RESUME/about_smal_compress.jpg"
+          src="../assets/RESUME/lucia_profile_new_cut.jpg"
           style="margin-left: 69px"
         />
       </v-col>
@@ -94,7 +110,7 @@
       style="background-color: white"
       class="d-flex"
     >
-      <v-img src="../assets/RESUME/about_smal_compress.jpg" width="100%" />
+      <v-img src="../assets/RESUME/lucia_profile_new_cut.jpg" width="100%" />
     </v-row>
   </div>
 </template>

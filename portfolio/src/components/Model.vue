@@ -12,11 +12,13 @@
 
 <script>
 import imgUrl1 from "/src/assets/MODEL_MAKING/01_compress.jpg";
-import imgUrl2 from "/src/assets/MODEL_MAKING/02_compress.png";
-import imgUrl3 from "/src/assets/MODEL_MAKING/03_compress.png";
-import imgUrl4 from "/src/assets/MODEL_MAKING/04_compress.png";
-import imgUrl5 from "/src/assets/MODEL_MAKING/05_compress.png";
+import imgUrl2 from "/src/assets/MODEL_MAKING/02_compress.jpg";
+import imgUrl3 from "/src/assets/MODEL_MAKING/03_compress.jpg";
+import imgUrl4 from "/src/assets/MODEL_MAKING/04_compress.jpg";
+import imgUrl5 from "/src/assets/MODEL_MAKING/05_compress.jpg";
 import imgUrl6 from "/src/assets/MODEL_MAKING/06_compress.jpg";
+import imgUrl7 from "/src/assets/MODEL_MAKING/07_compress.jpg";
+import imgUrl8 from "/src/assets/MODEL_MAKING/08_compress.png";
 
 export default {
   data() {
@@ -28,6 +30,8 @@ export default {
         { img: imgUrl4 },
         { img: imgUrl5 },
         { img: imgUrl6 },
+        { img: imgUrl7 },
+        { img: imgUrl8 },
       ],
     };
   },
