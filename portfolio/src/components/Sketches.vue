@@ -7,12 +7,11 @@
       <v-img :src="images[1].img" />
     </v-row>
     <v-row style="margin-bottom: 30px">
-      <v-col>
-        <v-img :src="images[2].img" />
-      </v-col>
-      <v-col>
-        <v-img :src="images[3].img" />
-      </v-col>
+      
+      <v-img :src="images[2].img" />
+    </v-row>
+    <v-row style="margin-bottom: 30px">
+      <v-img :src="images[3].img" />
     </v-row>
   </div>
 </template>
