@@ -61,10 +61,10 @@
             </div>
             <span class="text">
               <a
-                href="mailto:lbordona-alonso@gmail.com"
+                href="mailto:lbordona.alonso@gmail.com"
                 style="color: #784910 !important"
               >
-                lbordona-alonso@gmail.com
+                lbordona.alonso@gmail.com
               </a>
             </span>
           </div>
