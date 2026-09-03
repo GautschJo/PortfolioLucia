@@ -1,32 +1,47 @@
 <template>
-  <div style="margin-top: 30px">
+  <div style="margin: 30px auto 0; max-width: 1200px;">
     <v-row
       v-for="(image, index) in images"
       :key="index"
       style="margin-bottom: 30px"
     >
-      <v-img :src="image.img" />
+      <v-img :src="image.img" style="cursor: zoom-in" @click="zoom = image.img" />
     </v-row>
+
+    <!-- ponytail: one shared dialog, img capped to the viewport -->
+    <v-dialog
+      :model-value="!!zoom"
+      @update:model-value="zoom = null"
+      width="auto"
+      max-width="none"
+    >
+      <img
+        :src="zoom"
+        style="display: block; max-width: 95vw; max-height: 95vh; cursor: zoom-out"
+        @click="zoom = null"
+      />
+    </v-dialog>
   </div>
 </template>
 
 <script>
-import imgUrl1 from "/src/assets/MODEL_MAKING/01_compress_new.jpg";
-import imgUrl2 from "/src/assets/MODEL_MAKING/02_compress_new.jpg";
-import imgUrl3 from "/src/assets/MODEL_MAKING/03_compress_new.jpg";
-import imgUrl4 from "/src/assets/MODEL_MAKING/04_compress_new.jpg";
-import imgUrl5 from "/src/assets/MODEL_MAKING/05_compress_new.jpg";
-import imgUrl6 from "/src/assets/MODEL_MAKING/06_compress_new.jpg";
-import imgUrl7 from "/src/assets/MODEL_MAKING/07_compress_new.jpg";
-import imgUrl8 from "/src/assets/MODEL_MAKING/08_compress_new.jpg";
-import imgUrl9 from "/src/assets/MODEL_MAKING/09_compress_new.jpg";
-import imgUrl10 from "/src/assets/MODEL_MAKING/10_compress_new.jpg";
-import imgUrl11 from "/src/assets/MODEL_MAKING/11_compress_new.jpg";
+import imgUrl1 from "/src/assets/MODEL_MAKING/1.png";
+import imgUrl2 from "/src/assets/MODEL_MAKING/2.png";
+import imgUrl3 from "/src/assets/MODEL_MAKING/3.png";
+import imgUrl4 from "/src/assets/MODEL_MAKING/4.png";
+import imgUrl5 from "/src/assets/MODEL_MAKING/5.png";
+import imgUrl6 from "/src/assets/MODEL_MAKING/6.png";
+import imgUrl7 from "/src/assets/MODEL_MAKING/7.png";
+import imgUrl8 from "/src/assets/MODEL_MAKING/8.png";
+import imgUrl9 from "/src/assets/MODEL_MAKING/9.png";
+import imgUrl10 from "/src/assets/MODEL_MAKING/10.png";
+import imgUrl11 from "/src/assets/MODEL_MAKING/11.png";
 
 
 export default {
   data() {
     return {
+      zoom: null,
       images: [
         { img: imgUrl1 },
         { img: imgUrl2 },
