@@ -8,7 +8,7 @@
     <v-main>
       <v-container style="max-width: 1400px">
         <v-row justify="center" align="center" class="pt-10">
-          <v-col class="text-center pb-10">
+          <v-col class="text-center">
             <v-btn to="/costumeDesign" color="#784910"> Costume Design </v-btn>
           </v-col>
           <v-col class="text-center">

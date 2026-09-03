@@ -1,37 +1,24 @@
 <template>
-  <div style="margin-top: 30px">
-    <v-row style="margin-bottom: 30px">
-      <v-img :src="images[0].img" />
-    </v-row>
-    <v-row style="margin-bottom: 30px">
-      <v-img :src="images[1].img" />
-    </v-row>
-    <v-row style="margin-bottom: 30px">
-      
-      <v-img :src="images[2].img" />
-    </v-row>
-    <v-row style="margin-bottom: 30px">
-      <v-img :src="images[3].img" />
-    </v-row>
-  </div>
+  <Gallery :previews="previews" :originals="originals" />
 </template>
 
 <script>
-import imgUrl1 from "/src/assets/SKETCHES/01_compress.jpg";
-import imgUrl2 from "/src/assets/SKETCHES/02_compress.jpg";
-import imgUrl3 from "/src/assets/SKETCHES/03_compress.jpg";
-import imgUrl4 from "/src/assets/SKETCHES/04_compress.jpg";
+// 01_compress.jpg (1400px preview) pairs with 1.png (1920px original), etc.
+// ponytail: options must be inline literals, import.meta.glob is resolved at parse time
+const previews = import.meta.glob("/src/assets/SKETCHES/*_compress.jpg", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
+const originals = import.meta.glob("/src/assets/SKETCHES/*.png", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
 
 export default {
   data() {
-    return {
-      images: [
-        { img: imgUrl1 },
-        { img: imgUrl2 },
-        { img: imgUrl3 },
-        { img: imgUrl4 },
-      ],
-    };
+    return { previews, originals };
   },
 };
 </script>
